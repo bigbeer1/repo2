@@ -1,0 +1,14 @@
+server:
+  port: 10010
+spring:
+  application:
+    name: dabenxiong-gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 10
+zuul:
+  routes:
+    item-service: /** #添加微服务的路由
+
